@@ -1,15 +1,45 @@
+import * as React from 'react';
 import { Github, Linkedin, ChevronDown } from 'lucide-react';
 import profileImg from '@/assets/profile.jpg';
 
-const techIcons = [
-  { label: 'HTML', emoji: '🌐', delay: '0s', pos: 'top-8 right-8' },
-  { label: 'CSS', emoji: '🎨', delay: '0.5s', pos: 'top-32 right-0' },
-  { label: 'JS', emoji: '⚡', delay: '1s', pos: 'bottom-20 right-4' },
-  { label: 'React', emoji: '⚛️', delay: '1.5s', pos: 'bottom-4 right-24' },
-  { label: 'Python', emoji: '🐍', delay: '2s', pos: 'top-16 left-0' },
+
+
+const titles = [
+  'Information Technology Student',
+  'Full Stack Developer',
+  'AI Explorer',
 ];
 
 const Hero = () => {
+  const [displayText, setDisplayText] = React.useState('');
+  const [titleIndex, setTitleIndex] = React.useState(0);
+  const [isDeleting, setIsDeleting] = React.useState(false);
+  const [typingSpeed, setTypingSpeed] = React.useState(150);
+
+  React.useEffect(() => {
+    const handleTyping = () => {
+      const currentTitle = titles[titleIndex];
+
+      if (isDeleting) {
+        setDisplayText(currentTitle.substring(0, displayText.length - 1));
+        setTypingSpeed(50);
+      } else {
+        setDisplayText(currentTitle.substring(0, displayText.length + 1));
+        setTypingSpeed(150);
+      }
+
+      if (!isDeleting && displayText === currentTitle) {
+        setTimeout(() => setIsDeleting(true), 1500);
+      } else if (isDeleting && displayText === '') {
+        setIsDeleting(false);
+        setTitleIndex((prev) => (prev + 1) % titles.length);
+      }
+    };
+
+    const timer = setTimeout(handleTyping, typingSpeed);
+    return () => clearTimeout(timer);
+  }, [displayText, isDeleting, titleIndex, typingSpeed]);
+
   const scrollToProjects = () => {
     document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -28,35 +58,35 @@ const Hero = () => {
         <div className="order-2 lg:order-1">
           <p
             className="text-primary font-display font-medium text-sm uppercase tracking-[0.3em] mb-4 animate-fade-up"
-            style={{ animationDelay: '0.1s', opacity: 0 }}
+            style={{ animationDelay: '0.1s', opacity: '0' }}
           >
             Welcome to my portfolio
           </p>
           <h1
             className="font-display font-bold text-5xl lg:text-6xl xl:text-7xl leading-tight mb-4 animate-fade-up"
-            style={{ animationDelay: '0.25s', opacity: 0 }}
+            style={{ animationDelay: '0.25s', opacity: '0' }}
           >
             Hi, I'm{' '}
-            <span className="glow-text">Siva</span>
+            <span className="glow-text">Sivaprasath C</span>
           </h1>
           <h2
-            className="font-display font-semibold text-xl lg:text-2xl text-primary mb-6 animate-fade-up"
-            style={{ animationDelay: '0.4s', opacity: 0 }}
+            className="font-display font-semibold text-xl lg:text-2xl text-primary mb-6 animate-fade-up h-[1.5em]"
+            style={{ animationDelay: '0.4s', opacity: '0' }}
           >
-            Computer Science Student
+            {displayText}
             <span className="cursor-blink ml-1 text-primary">|</span>
           </h2>
           <p
             className="text-muted-foreground text-lg leading-relaxed max-w-lg mb-10 animate-fade-up"
-            style={{ animationDelay: '0.55s', opacity: 0 }}
+            style={{ animationDelay: '0.55s', opacity: '0' }}
           >
-            Passionate about web development, problem solving, and building innovative projects.
-            Currently pursuing B.Tech in Computer Science, turning ideas into digital reality.
+            Enthusiastic 2nd Year B.Tech Information Technology student with strong fundamentals in programming and problem-solving.
+            Actively building real-world projects and enhancing skills in full-stack development and modern technologies.
           </p>
 
           <div
             className="flex flex-wrap gap-4 animate-fade-up"
-            style={{ animationDelay: '0.7s', opacity: 0 }}
+            style={{ animationDelay: '0.7s', opacity: '0' }}
           >
             <button
               onClick={scrollToProjects}
@@ -74,13 +104,13 @@ const Hero = () => {
 
           <div
             className="flex items-center gap-6 mt-10 animate-fade-up"
-            style={{ animationDelay: '0.85s', opacity: 0 }}
+            style={{ animationDelay: '0.85s', opacity: '0' }}
           >
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://github.com/Sivaprasath4173" target="_blank" rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_8px_hsl(0_100%_50%/0.8)] flex items-center gap-2 text-sm">
               <Github size={18} /> GitHub
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://linkedin.com/in/SivaprasathC" target="_blank" rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_8px_hsl(0_100%_50%/0.8)] flex items-center gap-2 text-sm">
               <Linkedin size={18} /> LinkedIn
             </a>
@@ -90,17 +120,7 @@ const Hero = () => {
         {/* Right - Profile Image */}
         <div className="order-1 lg:order-2 flex items-center justify-center">
           <div className="relative">
-            {/* Floating tech icons */}
-            {techIcons.map((icon) => (
-              <div
-                key={icon.label}
-                className={`absolute ${icon.pos} hidden lg:flex items-center justify-center w-12 h-12 card-glass rounded-xl text-xl animate-float z-10`}
-                style={{ animationDelay: icon.delay }}
-                title={icon.label}
-              >
-                {icon.emoji}
-              </div>
-            ))}
+
 
             {/* Profile image container */}
             <div className="relative w-64 h-64 lg:w-80 lg:h-80">

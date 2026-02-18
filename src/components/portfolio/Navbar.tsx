@@ -6,6 +6,7 @@ const navLinks = [
   { label: 'About', href: '#about' },
   { label: 'Projects', href: '#projects' },
   { label: 'Skills', href: '#skills' },
+  { label: 'Certificates', href: '#certifications' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -40,11 +41,10 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
-          ? 'bg-background/80 backdrop-blur-xl border-b border-border shadow-lg'
-          : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
+        ? 'bg-background/80 backdrop-blur-xl border-b border-border shadow-lg'
+        : 'bg-transparent'
+        }`}
     >
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
@@ -75,7 +75,7 @@ const Navbar = () => {
         {/* Social Icons */}
         <div className="hidden md:flex items-center gap-4">
           <a
-            href="https://github.com"
+            href="https://github.com/Sivaprasath4173"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_8px_hsl(0_100%_50%/0.8)]"
@@ -83,7 +83,7 @@ const Navbar = () => {
             <Github size={20} />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://linkedin.com/in/SivaprasathC"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_8px_hsl(0_100%_50%/0.8)]"
@@ -117,10 +117,10 @@ const Navbar = () => {
               </li>
             ))}
             <li className="flex gap-4 pt-2">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://github.com/Sivaprasath4173" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Github size={20} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://linkedin.com/in/SivaprasathC" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin size={20} />
               </a>
             </li>

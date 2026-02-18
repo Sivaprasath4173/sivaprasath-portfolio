@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { Mail, Linkedin, Github, Send } from 'lucide-react';
 
 const contactLinks = [
-  { icon: Mail, label: 'Email', value: 'siva@example.com', href: 'mailto:siva@example.com' },
-  { icon: Linkedin, label: 'LinkedIn', value: 'linkedin.com/in/siva', href: 'https://linkedin.com' },
-  { icon: Github, label: 'GitHub', value: 'github.com/siva', href: 'https://github.com' },
+  { icon: Mail, label: 'Email', value: 'Sivaprasath4173@gmail.com', href: 'mailto:Sivaprasath4173@gmail.com' },
+  { icon: Linkedin, label: 'LinkedIn', value: 'linkedin.com/in/SivaprasathC', href: 'https://linkedin.com' },
+  { icon: Github, label: 'GitHub', value: 'github.com/Sivaprasath4173', href: 'https://github.com/Sivaprasath4173' },
 ];
 
 const Contact = () => {

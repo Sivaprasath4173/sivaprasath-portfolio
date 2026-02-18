@@ -8,6 +8,8 @@ import Contact from '@/components/portfolio/Contact';
 import Footer from '@/components/portfolio/Footer';
 import Particles from '@/components/portfolio/Particles';
 
+import Certifications from '@/components/portfolio/Certifications';
+
 const Index = () => {
   useScrollReveal();
 
@@ -21,6 +23,7 @@ const Index = () => {
           <About />
           <Projects />
           <Skills />
+          <Certifications />
           <Contact />
         </main>
         <Footer />

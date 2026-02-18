@@ -3,38 +3,38 @@ const skillGroups = [
     category: 'Programming Languages',
     icon: '💻',
     skills: [
-      { name: 'C', level: 90 },
-      { name: 'C++', level: 85 },
-      { name: 'Python', level: 88 },
-      { name: 'Java', level: 78 },
+      { name: 'Python', level: 90 },
+      { name: 'JavaScript', level: 85 },
+      { name: 'HTML', level: 95 },
+      { name: 'CSS', level: 90 },
     ],
   },
   {
     category: 'Web Development',
     icon: '🌐',
     skills: [
-      { name: 'HTML5', level: 95 },
-      { name: 'CSS3', level: 90 },
-      { name: 'JavaScript', level: 85 },
-      { name: 'React', level: 80 },
+      { name: 'Next.js', level: 85 },
+      { name: 'React.js', level: 88 },
+      { name: 'Node.js', level: 80 },
+      { name: 'Tailwind CSS', level: 90 },
     ],
   },
   {
-    category: 'Tools & Platforms',
+    category: 'Tools & AI',
     icon: '🛠️',
     skills: [
+      { name: 'Langchain', level: 75 },
+      { name: 'MongoDB', level: 82 },
       { name: 'Git & GitHub', level: 88 },
       { name: 'VS Code', level: 95 },
-      { name: 'Figma', level: 70 },
-      { name: 'Linux', level: 75 },
     ],
   },
 ];
 
 const techBadges = [
-  'C', 'C++', 'Python', 'Java', 'JavaScript', 'TypeScript',
-  'React', 'HTML5', 'CSS3', 'Git', 'GitHub', 'Figma',
-  'VS Code', 'Linux', 'MySQL', 'REST API', 'DSA', 'OOP',
+  'Python', 'Next.js', 'React.js', 'Node.js', 'JavaScript', 'HTML', 'CSS',
+  'Tailwind CSS', 'Langchain', 'MongoDB', 'Express.js', 'MySQL', 'Git', 'GitHub',
+  'Analytical Thinking', 'Teamwork', 'Time Management', 'VS Code',
 ];
 
 const Skills = () => {

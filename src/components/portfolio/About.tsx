@@ -5,23 +5,23 @@ const infoCards = [
   {
     icon: GraduationCap,
     title: 'Education',
-    content: '2022 – Present',
-    sub: 'B.Tech in Computer Science',
-    detail: 'Anna University, Chennai',
+    content: 'Sept 2024 – Present',
+    sub: 'B.Tech IT (2nd Year) • CGPA 8.11',
+    detail: 'SNS College of Engineering, Coimbatore',
   },
   {
     icon: Code2,
-    title: 'Technical Skills',
-    content: 'C, C++, Python, Java',
-    sub: 'HTML, CSS, JS, React',
-    detail: 'Git, VS Code, Figma',
+    title: 'Internship',
+    content: 'July 2025 – Sep 2025',
+    sub: 'MERN Stack Training',
+    detail: 'Amypo Technologies Pvt. Ltd.',
   },
   {
     icon: Trophy,
-    title: 'Achievements',
-    content: 'HackerRank 5★ Python',
-    sub: 'React – Meta Certificate',
-    detail: 'State Hackathon Finalist',
+    title: 'Interests',
+    content: 'AI & Machine Learning',
+    sub: 'Full Stack Development',
+    detail: 'Grade I Music (Keyboard)',
   },
 ];
 
@@ -84,12 +84,12 @@ const About = () => {
             </h3>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                I'm <strong className="text-foreground">Siva</strong>, a 3rd year B.Tech Computer Science student at
-                Anna University, Chennai. I'm driven by curiosity and a deep passion for building things that matter.
+                I'm <strong className="text-foreground">Sivaprasath C</strong>, a 2nd year B.Tech Information Technology student at
+                SNS College of Engineering, Coimbatore. I'm driven by curiosity and a deep passion for building things that matter.
               </p>
               <p>
-                My journey began with competitive programming and has evolved into full-stack web development,
-                where I love turning complex problems into clean, efficient solutions.
+                My journey began with learning Python and has evolved into full-stack web development,
+                where I love turning complex problems into clean, efficient solutions. I recently completed a MERN stack training program.
               </p>
               <p>
                 I'm actively seeking <strong className="text-primary">internships</strong> and{' '}
@@ -100,9 +100,9 @@ const About = () => {
 
             <div className="grid grid-cols-2 gap-4 mt-8">
               {[
-                { label: 'Degree', value: 'B.Tech CSE' },
-                { label: 'Year', value: '3rd Year (2024)' },
-                { label: 'Location', value: 'Chennai, India' },
+                { label: 'Degree', value: 'B.Tech IT' },
+                { label: 'Year', value: '2nd Year (2024)' },
+                { label: 'Location', value: 'Coimbatore, India' },
                 { label: 'Status', value: 'Open to Work ✓' },
               ].map((item) => (
                 <div key={item.label} className="flex flex-col">

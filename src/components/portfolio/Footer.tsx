@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -14,14 +14,21 @@ const Footer = () => {
           </a>
 
           {/* Nav Links */}
-          <div className="flex items-center gap-6 text-sm text-muted-foreground">
-            {['Home', 'About', 'Projects', 'Skills', 'Contact'].map((link) => (
+          <div className="flex items-center gap-6 text-sm text-muted-foreground flex-wrap justify-center">
+            {[
+              { label: 'Home', href: 'home' },
+              { label: 'About', href: 'about' },
+              { label: 'Projects', href: 'projects' },
+              { label: 'Skills', href: 'skills' },
+              { label: 'Certificates', href: 'certifications' },
+              { label: 'Contact', href: 'contact' }
+            ].map((link) => (
               <a
-                key={link}
-                href={`#${link.toLowerCase()}`}
+                key={link.label}
+                href={`#${link.href}`}
                 className="hover:text-primary transition-colors duration-300"
               >
-                {link}
+                {link.label}
               </a>
             ))}
           </div>
@@ -29,9 +36,9 @@ const Footer = () => {
           {/* Social */}
           <div className="flex items-center gap-4">
             {[
-              { icon: Github, href: 'https://github.com' },
-              { icon: Linkedin, href: 'https://linkedin.com' },
-              { icon: Mail, href: 'mailto:siva@example.com' },
+              { icon: Github, href: 'https://github.com/Sivaprasath4173' },
+              { icon: Linkedin, href: 'https://linkedin.com/in/SivaprasathC' },
+              { icon: Mail, href: 'mailto:Sivaprasath4173@gmail.com' },
             ].map(({ icon: Icon, href }) => (
               <a
                 key={href}
@@ -48,11 +55,8 @@ const Footer = () => {
 
         <div className="divider-glow my-6" />
 
-        <p className="text-center text-muted-foreground text-sm flex items-center justify-center gap-1.5">
-          Made with <Heart size={14} className="text-primary fill-primary animate-pulse" /> by{' '}
-          <span className="text-primary font-medium">Siva</span>
-          <span className="mx-1">·</span>
-          © {new Date().getFullYear()} All rights reserved.
+        <p className="text-center text-muted-foreground text-sm">
+          © {new Date().getFullYear()} <span className="text-primary font-medium">Sivaprasath C</span>. All rights reserved.
         </p>
       </div>
     </footer>

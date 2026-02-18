@@ -1,43 +1,23 @@
 import { ExternalLink, Github } from 'lucide-react';
-import project1 from '@/assets/project1.jpg';
-import project2 from '@/assets/project2.jpg';
-import project3 from '@/assets/project3.jpg';
-import project4 from '@/assets/project4.jpg';
+import project1 from '@/assets/news_nuggets.png';
+import project2 from '@/assets/fudoraq.png';
 
 const projects = [
   {
-    title: 'RedTrack Dashboard',
+    title: 'News Application (NewsNuggets)',
     description:
-      'A real-time analytics dashboard with interactive charts, user management, and data export functionality. Built with React and modern APIs.',
+      'Short-Form News Application: Designed and developed a short-form news application inspired by Inshorts, delivering concise and real-time news using live API integration.',
     image: project1,
-    tags: ['React', 'TypeScript', 'Recharts', 'REST API'],
+    tags: ['React.js', 'News API', 'Tailwind CSS', 'Mobile First'],
     demo: '#',
     github: '#',
   },
   {
-    title: 'DarkShop E-Commerce',
+    title: 'Food Court Ordering App (FudoraQ)',
     description:
-      'Full-featured e-commerce platform with cart management, user authentication, payment integration, and order tracking.',
+      'Virtual Queue & Smart Canteen System: Built a web-based virtual queue management system enabling digital food ordering, real-time order tracking, and instant notifications.',
     image: project2,
-    tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-    demo: '#',
-    github: '#',
-  },
-  {
-    title: 'NeonChat App',
-    description:
-      'Real-time messaging application with group chats, private messages, notifications, and a sleek dark UI with WebSocket support.',
-    image: project3,
-    tags: ['React', 'Socket.io', 'Express', 'JWT'],
-    demo: '#',
-    github: '#',
-  },
-  {
-    title: 'DataViz Analytics',
-    description:
-      'Advanced data visualization platform for business intelligence with custom charts, dashboards, and automated reporting.',
-    image: project4,
-    tags: ['Python', 'Flask', 'D3.js', 'PostgreSQL'],
+    tags: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'MySQL'],
     demo: '#',
     github: '#',
   },
