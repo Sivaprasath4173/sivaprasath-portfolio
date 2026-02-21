@@ -4,15 +4,6 @@ import qrMagicImg from '@/assets/qr_magic_studio.png';
 
 const projects = [
   {
-    title: 'QR Magic Studio',
-    description:
-      'A next-generation AI-powered QR code generator with advanced creative styling, styling options, and premium SaaS dashboard features.',
-    image: qrMagicImg,
-    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'SaaS'],
-    demo: 'https://qr-magic-studio.vercel.app',
-    github: 'https://github.com/Sivaprasath4173/qr-magic-studio',
-  },
-  {
     title: 'Resume Craft',
     description:
       'AI-Powered Resume Builder: Create ATS-friendly, professional resumes with real-time AI assistance, drag-and-drop customization, and instant PDF export.',
@@ -20,6 +11,15 @@ const projects = [
     tags: ['React', 'TypeScript', 'Tailwind CSS', 'Shadcn UI', 'AI Assistance'],
     demo: 'https://resume-craft-red-theta.vercel.app',
     github: 'https://github.com/Sivaprasath4173/Resume-Craft',
+  },
+  {
+    title: 'QR Magic Studio',
+    description:
+      'A next-generation AI-powered QR code generator with advanced creative styling, styling options, and premium SaaS dashboard features.',
+    image: qrMagicImg,
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'SaaS'],
+    demo: 'https://qr-magic-studio.vercel.app',
+    github: 'https://github.com/Sivaprasath4173/qr-magic-studio',
   },
 ];
 
