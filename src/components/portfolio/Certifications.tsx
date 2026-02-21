@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Award, ExternalLink, ShieldCheck, GraduationCap } from 'lucide-react';
-
 const certifications = [
     {
         title: 'Generative AI',
@@ -8,23 +7,23 @@ const certifications = [
         date: '2024',
         icon: ShieldCheck,
         description: 'Specialized training in Generative AI models and applications.',
-        link: '#',
+        link: 'https://drive.google.com/drive/folders/1IBC68EvVOdrssqUG3QejvNBPILUW_WdB?usp=share_link',
     },
     {
-        title: 'Python for Data Science',
+        title: 'Python',
         organization: 'IBM & ByteXL',
         date: '2023',
         icon: GraduationCap,
         description: 'Comprehensive certification in Python programming for data analysis.',
-        link: '#',
+        link: 'https://drive.google.com/drive/folders/1IBC68EvVOdrssqUG3QejvNBPILUW_WdB?usp=share_link',
     },
     {
         title: 'Grade I Keyboard Distinction',
-        organization: 'Trinity College London',
+        organization: 'Annamalai University, Tamil Nadu',
         date: '2022',
         icon: Award,
         description: 'Achieved Distinction in Music Theory and Practical Keyboard Performance.',
-        link: '#',
+        link: 'https://drive.google.com/drive/folders/1IBC68EvVOdrssqUG3QejvNBPILUW_WdB?usp=share_link',
     },
 ];
 
@@ -56,9 +55,6 @@ const Certifications = () => {
                                 <div className="p-3 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
                                     <cert.icon size={28} />
                                 </div>
-                                <span className="text-xs font-display font-medium text-muted-foreground px-3 py-1 rounded-full border border-border">
-                                    {cert.date}
-                                </span>
                             </div>
 
                             <h3 className="text-xl font-display font-bold mb-2 group-hover:text-primary transition-colors">
@@ -73,6 +69,8 @@ const Certifications = () => {
 
                             <a
                                 href={cert.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="inline-flex items-center gap-2 text-sm font-semibold text-foreground hover:text-primary transition-colors group/link"
                             >
                                 View Certificate

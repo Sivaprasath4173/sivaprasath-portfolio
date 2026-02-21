@@ -6,7 +6,7 @@ import profileImg from '@/assets/profile.jpg';
 
 const titles = [
   'Information Technology Student',
-  'Full Stack Developer',
+  'Exploring Full Stack Development',
   'AI Explorer',
 ];
 

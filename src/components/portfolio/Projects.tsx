@@ -1,7 +1,17 @@
 import { ExternalLink, Github } from 'lucide-react';
 import resumeCraftImg from '@/assets/resume_craft.png';
+import qrMagicImg from '@/assets/qr_magic_studio.png';
 
 const projects = [
+  {
+    title: 'QR Magic Studio',
+    description:
+      'A next-generation AI-powered QR code generator with advanced creative styling, styling options, and premium SaaS dashboard features.',
+    image: qrMagicImg,
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'SaaS'],
+    demo: 'https://qr-magic-studio.vercel.app',
+    github: 'https://github.com/Sivaprasath4173/qr-magic-studio',
+  },
   {
     title: 'Resume Craft',
     description:
