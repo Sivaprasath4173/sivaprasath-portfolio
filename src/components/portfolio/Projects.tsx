@@ -1,25 +1,15 @@
 import { ExternalLink, Github } from 'lucide-react';
-import project1 from '@/assets/news_nuggets.png';
-import project2 from '@/assets/fudoraq.png';
+import resumeCraftImg from '@/assets/resume_craft.png';
 
 const projects = [
   {
-    title: 'News Application (NewsNuggets)',
+    title: 'Resume Craft',
     description:
-      'Short-Form News Application: Designed and developed a short-form news application inspired by Inshorts, delivering concise and real-time news using live API integration.',
-    image: project1,
-    tags: ['React.js', 'News API', 'Tailwind CSS', 'Mobile First'],
-    demo: '#',
-    github: '#',
-  },
-  {
-    title: 'Food Court Ordering App (FudoraQ)',
-    description:
-      'Virtual Queue & Smart Canteen System: Built a web-based virtual queue management system enabling digital food ordering, real-time order tracking, and instant notifications.',
-    image: project2,
-    tags: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'MySQL'],
-    demo: '#',
-    github: '#',
+      'AI-Powered Resume Builder: Create ATS-friendly, professional resumes with real-time AI assistance, drag-and-drop customization, and instant PDF export.',
+    image: resumeCraftImg,
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Shadcn UI', 'AI Assistance'],
+    demo: 'https://resume-craft-red-theta.vercel.app',
+    github: 'https://github.com/Sivaprasath4173/Resume-Craft',
   },
 ];
 
